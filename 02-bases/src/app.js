@@ -1,3 +1,6 @@
+// require ('./js-foundation/algoritmia')
+
+
 // IMPORT DE ARCHIVO BARRIL
 // const { getUUID, getAge } = require('./plugins');
 
@@ -7,11 +10,17 @@
 // const {getUserById} = require('./js-foundation/03-callbacks');
 // const {getUserById} = require('./js-foundation/04-arrow');
 // const {makeBuildPerson} = require('./js-foundation/05-factory');
-require ('./js-foundation/algoritmia')
 
 
 
 // const getPokemonById = require('./js-foundation/06-promises');
+const getPokemonById = require('./js-foundation/06-promisesInChain');
+
+
+getPokemonById(2)
+  .then(pokemon => console.log({pokemon}))
+  .catch(()=> console.log('Intente de nuevo'))
+  .finally(()=> console.log('Finalmente'));
 
 
 // getPokemonById(1, (pokemon)=>{
