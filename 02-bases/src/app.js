@@ -14,12 +14,13 @@
 
 
 // const getPokemonById = require('./js-foundation/06-promises');
-const getPokemonById = require('./js-foundation/06-promisesInChain');
+// const getPokemonById = require('./js-foundation/06-promisesInChain');
+const getPokemonById = require('./js-foundation/06.2-promises(Async-Await)');
 
 
 getPokemonById(2)
   .then(pokemon => console.log({pokemon}))
-  .catch(()=> console.log('Intente de nuevo'))
+  .catch((error)=> console.log(error))
   .finally(()=> console.log('Finalmente'));
 
 
