@@ -1,5 +1,11 @@
 # 02 Bases de Node
 
+Instalar Node
+
+```
+npm i
+```
+
 Correr en Dev
 
 ```
