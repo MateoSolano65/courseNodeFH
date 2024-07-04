@@ -3,7 +3,7 @@
 Instalar Node
 
 ```
-npm i
+npm install
 ```
 
 Correr en Dev
